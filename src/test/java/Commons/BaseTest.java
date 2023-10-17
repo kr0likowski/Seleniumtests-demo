@@ -11,6 +11,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
