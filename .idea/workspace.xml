@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0a2ec5f-2de2-494a-a3e4-9f3ef82fd0f4" name="Changes" comment="Project init">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Factory/Page.java" afterDir="false" />
+    <list default="true" id="d0a2ec5f-2de2-494a-a3e4-9f3ef82fd0f4" name="Changes" comment="Base page class">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Commons/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Commons/BrowserProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/Wait.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Factory/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Commons/Page.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +33,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -61,6 +65,14 @@
       <option name="presentableId" value="Default" />
       <updated>1697550046921</updated>
     </task>
+    <task id="LOCAL-00001" summary="Base page class">
+      <created>1697559071429</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697559071429</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,6 +100,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project init" />
+    <MESSAGE value="Base page class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Base page class" />
   </component>
 </project>
