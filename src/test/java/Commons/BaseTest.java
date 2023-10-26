@@ -6,21 +6,21 @@ package Commons;
 */
 
 import Utils.Wait;
+import org.junit.After;
+import org.junit.Before;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
-    protected WebDriver driver;
+    public WebDriver driver;
 
-    @BeforeTest
-    void setup(){
+    @Before
+    public void setup(){
 
-        String browserName = System.getProperty("browserName");
+        String browserName = System.getProperty("browserName", "FIREFOX");
 
         driver = BrowserProvider.createDriver(browserName);
 
@@ -28,8 +28,8 @@ public class BaseTest {
 
     }
 
-    @AfterTest
-    void tearDown(){
+    @After
+    public void tearDown(){
         driver.quit();
     }
 
