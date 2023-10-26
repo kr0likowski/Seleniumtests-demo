@@ -24,7 +24,7 @@ public class BaseTest {
 
         driver = BrowserProvider.createDriver(browserName);
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Wait.SHORT_WAIT));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Wait.LONG_WAIT));
 
     }
 
