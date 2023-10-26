@@ -6,11 +6,13 @@ package Commons;
 */
 
 import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
+import io.github.bonigarcia.wdm.managers.EdgeDriverManager;
 import io.github.bonigarcia.wdm.managers.FirefoxDriverManager;
 import io.github.bonigarcia.wdm.managers.InternetExplorerDriverManager;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
@@ -22,19 +24,19 @@ public class BrowserProvider {
 
         switch(browser){
             case "FIREFOX":
-                FirefoxDriverManager.getInstance().setup();
+                FirefoxDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
                 break;
             case "CHROME":
-                ChromeDriverManager.getInstance().setup();
+                ChromeDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
                 break;
-            case "IE":
-                InternetExplorerDriverManager.getInstance().setup();
-                driver = new InternetExplorerDriver();
+            case "EDGE":
+                EdgeDriverManager.edgedriver().setup();
+                driver = new EdgeDriver();
                 break;
             default:
-                ChromeDriverManager.getInstance().setup();
+                ChromeDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
                 break;
         }
