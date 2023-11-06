@@ -3,6 +3,9 @@ package Commons;
 /*
 @Author: jkrolikowski
 @Date: 10/17/2023
+
+Base test class to be extended by tests
+
 */
 
 import Utils.Wait;
@@ -20,6 +23,7 @@ public class BaseTest {
     @Before
     public void setup(){
 
+        // Get browser specified in the system property -DbrowserName= (default: Firefox)
         String browserName = System.getProperty("browserName", "FIREFOX");
 
         driver = BrowserProvider.createDriver(browserName);

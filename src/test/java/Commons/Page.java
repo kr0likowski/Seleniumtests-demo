@@ -1,11 +1,12 @@
 package Commons;
 
 /*
-*
-* This class should be extended by other Page classes containing only basic page methods
-*
+
 @Author: jkrolikowski
 @Date: 10/17/2023
+
+This class should be extended by other Page classes containing only basic page methods
+
 */
 
 import org.openqa.selenium.WebDriver;
